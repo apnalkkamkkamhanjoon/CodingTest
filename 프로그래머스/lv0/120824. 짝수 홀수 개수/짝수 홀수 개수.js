@@ -1,6 +1,4 @@
 function solution(num_list) {
-    const arr = num_list.map((a) => a%2);
-    const odd = arr.filter((x) => x === 0).length;
-    const even = arr.filter((x) => x === 1).length;
-    return [odd, even];
+    return [num_list.filter((x) => x%2 ===0).length,
+            num_list.filter((x) => x%2===1).length];
 }
