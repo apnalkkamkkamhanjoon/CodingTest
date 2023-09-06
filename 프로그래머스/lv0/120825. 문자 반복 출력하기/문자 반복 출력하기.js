@@ -1,4 +1,3 @@
 function solution(my_string, n) {
-    var answer = [...my_string].map((x) => x.repeat(n)).join('')
-    return answer;
+    return my_string.split('').map((x) => x.repeat(n)).join('');
 }
