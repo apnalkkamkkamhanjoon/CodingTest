@@ -1,5 +1,3 @@
 function solution(n) {
-    var answer = [];
-    for(let i=0;i<=n;i++) n%i===0?answer.push(i):''
-    return answer.length;
+    return Array.from({length:n+1},(a,b)=>b).filter(b=>n%b===0).length;
 }
