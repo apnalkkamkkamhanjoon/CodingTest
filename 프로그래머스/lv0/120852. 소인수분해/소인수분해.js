@@ -1,14 +1,10 @@
 function solution(n) {
     let answer = [];
-    let idx = 2;
-    while(n!==1){
-        if(n%idx===0){
-            answer.push(idx);
-            while(n%idx==0){
-                n /= idx;
-            }
+    for(let i = 2; i <= n; i++) {
+        while (n % i === 0) {
+            n /= i;
+            answer.push(i);
         }
-        idx++;
     }
-    return answer;
+    return [...new Set(answer)];
 }
