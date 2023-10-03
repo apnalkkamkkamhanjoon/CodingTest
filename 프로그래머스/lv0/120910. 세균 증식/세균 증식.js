@@ -1,3 +1,3 @@
 function solution(n, t) {
-    return n << t;
+    return Math.pow(2,t)*n;
 }
