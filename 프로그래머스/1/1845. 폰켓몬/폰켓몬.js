@@ -1,5 +1,5 @@
 function solution(nums) {
-    let answer = [...new Set(nums)],
-        limit = nums.length / 2
-    return answer.length > limit ? limit : answer.length
+    let answer = [...new Set(nums)]
+    let max = nums.length / 2
+    return answer.length > max ? max : answer.length
 }
