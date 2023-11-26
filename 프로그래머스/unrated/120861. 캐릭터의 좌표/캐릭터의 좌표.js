@@ -1,9 +1,7 @@
 function solution(keyinput, board) {
     let x = 0;
     let y = 0; 
-    const range = 
-          [ Math.abs( Math.floor(board[0] / 2) ), 
-           Math.abs( Math.floor(board[1] / 2) ) ];
+    const range = [ Math.abs( Math.floor(board[0] / 2) ), Math.abs( Math.floor(board[1] / 2) ) ];
     for(let k of keyinput){
         switch(k){
             case "left": x--; break;
@@ -17,7 +15,6 @@ function solution(keyinput, board) {
         if(Math.abs(y)>range[1]){
             y = y > 0 ? range[1] : range[1] * -1;
         }
-        
     }
     return [x,y];
 }
